@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="To see more and comment on this post…">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Analogue Circuit Revision (Chinese)">
+<meta property="og:url" content="http://example.com/2020/11/27/Analogue-Circuit-Revision-Chinese/index.html">
+<meta property="og:site_name" content="Octopus&#39;s Garden">
+<meta property="og:description" content="To see more and comment on this post…">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-27T13:32:41.000Z">
+<meta property="article:modified_time" content="2020-11-27T13:45:58.394Z">
+<meta property="article:author" content="Liao Junxuan">
+<meta property="article:tag" content="Electronics">
+<meta property="article:tag" content="Revision">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2020/11/27/Analogue-Circuit-Revision-Chinese/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Analogue Circuit Revision (Chinese) | Octopus's Garden</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Octopus's Garden</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">MikeWalrus's Blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/27/Analogue-Circuit-Revision-Chinese/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Octopus's Garden">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Analogue Circuit Revision (Chinese)
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-11-27 21:32:41 / Modified: 21:45:58" itemprop="dateCreated datePublished" datetime="2020-11-27T21:32:41+08:00">2020-11-27</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><object data="/pdf/amplifiers.pdf" type="application/pdf" width="100%" height="1000px"></object></p>
+<p>To see more and comment on this post…</p>
+<a id="more"></a>
+
+<h1 id="大题5道-（70-）"><a href="#大题5道-（70-）" class="headerlink" title="大题5道 （70%）"></a>大题5道 （70%）</h1><ul>
+<li>直流电流</li>
+<li>交流电路</li>
+<li>一阶线性放大电路</li>
+<li>三极管放大电路（$\leqslant 15%$）</li>
+<li>集成运算放大电路</li>
+</ul>
+<h1 id="概念题-（30-）"><a href="#概念题-（30-）" class="headerlink" title="概念题 （30%）"></a>概念题 （30%）</h1><ul>
+<li>单选</li>
+<li>填空</li>
+<li>判断正误<ul>
+<li>大部分都是错误的</li>
+</ul>
+</li>
+<li>简答<ul>
+<li>简单的计算</li>
+<li>反馈的类型</li>
+</ul>
+</li>
+</ul>
+<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><p>欧姆定律，基尔霍夫定律</p>
+<p>标识每一个电压和电流的参考方向</p>
+<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><p>实际使用三种方法</p>
+<ul>
+<li><p><strong>戴维南定理</strong></p>
+</li>
+<li><p>叠加原理</p>
+<ul>
+<li>单电源的等效电路中不出现电桥电路的时候可以用</li>
+<li>出现电桥电路就不要用</li>
+</ul>
+</li>
+<li><p>等效电路</p>
+<p>一步步化简</p>
+</li>
+</ul>
+<h1 id="第三章-正弦交流电路"><a href="#第三章-正弦交流电路" class="headerlink" title="第三章 正弦交流电路"></a>第三章 正弦交流电路</h1><table>
+<thead>
+<tr>
+<th>瞬时值</th>
+<th>峰值</th>
+<th>有效值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>小写字母</td>
+<td>大写字母加下标m</td>
+<td></td>
+</tr>
+</tbody></table>
+<ol>
+<li>元件的交流特性（直流特性）<br>|<br>电感 电容 电阻</li>
+<li>简单电路的交流特性</li>
+<li>正弦量的三要素<ol>
+<li>直流大小</li>
+<li>变化快慢</li>
+<li>相位（差）</li>
+</ol>
+</li>
+<li>功率<ol>
+<li>有功功率</li>
+<li>无功功率</li>
+<li>视在功率</li>
+<li>功率三角形</li>
+</ol>
+</li>
+<li>谐振的特点</li>
+<li>计算<br> $\sqrt{U^2_R+(U_C-U_R)^2}$<ol>
+<li>谐振<br> $X_C=X_L$</li>
+<li>提高功率因数</li>
+<li>相量图</li>
+</ol>
+</li>
+</ol>
+<h1 id="第四章-一阶线性电路"><a href="#第四章-一阶线性电路" class="headerlink" title="第四章 一阶线性电路"></a>第四章 一阶线性电路</h1><ol>
+<li><p>换路定则</p>
+<p>两个公式表示</p>
+</li>
+<li><p>三要素分析法</p>
+<ol>
+<li>时间常数<ol>
+<li>R是等效电阻：储能元件看进去的线性有源二端口网络的</li>
+<li>$\tau=RC$ $\tau=\frac{L}{R}$</li>
+</ol>
+</li>
+<li>公式<br>$$f(t)=f(\infty)+[f(0^+)-f(\infty)]e^{-\frac{t}{\tau}}$$</li>
+</ol>
+</li>
+</ol>
+<h1 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h1><ol>
+<li>PN结的单向导电性</li>
+<li>二极管、稳压二极管、三极管 的工作状态<ol>
+<li>正向导通、反向截止</li>
+<li>反向击穿区 也可以</li>
+<li>饱和区 放大区 截止区 根据集电极是反偏还是正偏</li>
+<li>硅管 锗管的电压</li>
+<li>NPN PNP</li>
+<li>二极管优先导通，谁承受的正向电压最高，谁最先导通</li>
+</ol>
+</li>
+</ol>
+<h1 id="第六章-基本放大器"><a href="#第六章-基本放大器" class="headerlink" title="第六章 基本放大器"></a>第六章 基本放大器</h1><table>
+<thead>
+<tr>
+<th>放大倍数</th>
+<th>输入电阻</th>
+<th>输出电阻</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{输出}{输入}$</td>
+<td>$R_i=\frac{U_i}{I_i}$</td>
+<td>$R_o=\frac{U_o}{U_o}$</td>
+</tr>
+<tr>
+<td>三种基本三极管放大电路</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>大小写 动态分析的时候都是小写的 输入电阻 输出电阻 也是小写</p>
+<p>要么同用相量 要么同用瞬时值</p>
+<p>受控电源一定要标出控制量</p>
+<h2 id="反馈-（第十五章）"><a href="#反馈-（第十五章）" class="headerlink" title="反馈 （第十五章）"></a>反馈 （第十五章）</h2><ul>
+<li>交流电位的瞬时极性法判断反馈类型</li>
+<li>负反馈对放大电路的影响<ul>
+<li>减小放大倍数</li>
+<li>placeholder</li>
+</ul>
+</li>
+</ul>
+<h2 id="静态工作点对放大电路的影响"><a href="#静态工作点对放大电路的影响" class="headerlink" title="静态工作点对放大电路的影响"></a>静态工作点对放大电路的影响</h2><ul>
+<li>饱和失真<ul>
+<li>削去负半周</li>
+</ul>
+</li>
+<li>截止失真<ul>
+<li>削去正半周</li>
+</ul>
+</li>
+</ul>
+<h1 id="运算放大电路"><a href="#运算放大电路" class="headerlink" title="运算放大电路"></a>运算放大电路</h1><ul>
+<li>两个工作区域的工作特点和判断</li>
+<li>反馈<ul>
+<li>placeholder</li>
+</ul>
+</li>
+<li>计算题<ul>
+<li>虚短 虚断</li>
+<li>5步</li>
+<li>叠加</li>
+</ul>
+</li>
+</ul>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><ul>
+<li>四个部分</li>
+<li>半波整流和桥式整流输出电压与副边电压的关系</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Electronics/" rel="tag"># Electronics</a>
+              <a href="/tags/Revision/" rel="tag"># Revision</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/11/27/Calculus-Notes-Chinese/" rel="prev" title="Calculus Notes (Chinese)">
+      <i class="fa fa-chevron-left"></i> Calculus Notes (Chinese)
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%A7%E9%A2%985%E9%81%93-%EF%BC%8870-%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">大题5道 （70%）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5%E9%A2%98-%EF%BC%8830-%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">概念题 （30%）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="nav-number">3.</span> <span class="nav-text">第一章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="nav-number">4.</span> <span class="nav-text">第二章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%AD%A3%E5%BC%A6%E4%BA%A4%E6%B5%81%E7%94%B5%E8%B7%AF"><span class="nav-number">5.</span> <span class="nav-text">第三章 正弦交流电路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E7%94%B5%E8%B7%AF"><span class="nav-number">6.</span> <span class="nav-text">第四章 一阶线性电路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0"><span class="nav-number">7.</span> <span class="nav-text">第五章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%9F%BA%E6%9C%AC%E6%94%BE%E5%A4%A7%E5%99%A8"><span class="nav-number">8.</span> <span class="nav-text">第六章 基本放大器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E9%A6%88-%EF%BC%88%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0%EF%BC%89"><span class="nav-number">8.1.</span> <span class="nav-text">反馈 （第十五章）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%99%E6%80%81%E5%B7%A5%E4%BD%9C%E7%82%B9%E5%AF%B9%E6%94%BE%E5%A4%A7%E7%94%B5%E8%B7%AF%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="nav-number">8.2.</span> <span class="nav-text">静态工作点对放大电路的影响</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E6%94%BE%E5%A4%A7%E7%94%B5%E8%B7%AF"><span class="nav-number">9.</span> <span class="nav-text">运算放大电路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">10.</span> <span class="nav-text"></span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Author</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Author</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'a3bcd411f392002d5132',
+      clientSecret: 'b93b5806da5ed4d4c6b86d59fb2a4a942162eed0',
+      repo        : 'MikeWalrus.github.io',
+      owner       : 'MikeWalrus',
+      admin       : ['MikeWalrus'],
+      id          : 'ce87e39012793a81d4d948770387ff55',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
