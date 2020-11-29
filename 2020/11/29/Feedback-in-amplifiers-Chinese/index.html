@@ -20,22 +20,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Pointer, memory and moreInitialisation int* p1, p2 only creates one pointer and one ordinary int. Needs an * for each variable name. In cpp, often int* ptr not int *ptr, although compiler doesn’t ca">
+  <meta name="description" content="放大电路中的分类和判断…">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++ Learning Notes">
-<meta property="og:url" content="http://example.com/2020/11/10/C-Learning-Notes/index.html">
+<meta property="og:title" content="Feedback in amplifiers (Chinese)">
+<meta property="og:url" content="http://example.com/2020/11/29/Feedback-in-amplifiers-Chinese/index.html">
 <meta property="og:site_name" content="Octopus&#39;s Garden">
-<meta property="og:description" content="Pointer, memory and moreInitialisation int* p1, p2 only creates one pointer and one ordinary int. Needs an * for each variable name. In cpp, often int* ptr not int *ptr, although compiler doesn’t ca">
+<meta property="og:description" content="放大电路中的分类和判断…">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/img/coutPtrToChar.png">
-<meta property="article:published_time" content="2020-11-10T11:33:45.000Z">
-<meta property="article:modified_time" content="2020-11-27T13:47:08.015Z">
+<meta property="article:published_time" content="2020-11-29T10:35:05.000Z">
+<meta property="article:modified_time" content="2020-11-29T11:19:04.016Z">
 <meta property="article:author" content="Liao Junxuan">
-<meta property="article:tag" content="Coding cpp">
+<meta property="article:tag" content="Electronics">
+<meta property="article:tag" content="Revision">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/img/coutPtrToChar.png">
 
-<link rel="canonical" href="http://example.com/2020/11/10/C-Learning-Notes/">
+<link rel="canonical" href="http://example.com/2020/11/29/Feedback-in-amplifiers-Chinese/">
 
 
 <script id="page-configurations">
@@ -48,7 +47,7 @@
   };
 </script>
 
-  <title>C++ Learning Notes | Octopus's Garden</title>
+  <title>Feedback in amplifiers (Chinese) | Octopus's Garden</title>
   
 
 
@@ -154,7 +153,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/10/C-Learning-Notes/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/29/Feedback-in-amplifiers-Chinese/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/avatar.png">
@@ -167,7 +166,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          C++ Learning Notes
+          Feedback in amplifiers (Chinese)
         </h1>
 
         <div class="post-meta">
@@ -176,16 +175,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-11-10 19:33:45" itemprop="dateCreated datePublished" datetime="2020-11-10T19:33:45+08:00">2020-11-10</time>
+              <time title="Created: 2020-11-29 18:35:05 / Modified: 19:19:04" itemprop="dateCreated datePublished" datetime="2020-11-29T18:35:05+08:00">2020-11-29</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-11-27 21:47:08" itemprop="dateModified" datetime="2020-11-27T21:47:08+08:00">2020-11-27</time>
-              </span>
 
           
             <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
@@ -205,35 +198,41 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="/css/1.css">
-
-<h1 id="Pointer-memory-and-more"><a href="#Pointer-memory-and-more" class="headerlink" title="Pointer, memory and more"></a>Pointer, memory and more</h1><h2 id="Initialisation"><a href="#Initialisation" class="headerlink" title="Initialisation"></a>Initialisation</h2><ul>
-<li><code>int* p1, p2</code> only creates one pointer and one ordinary int. Needs an * for each variable name.</li>
-<li>In cpp, often <code>int* ptr</code> not <code>int *ptr</code>, although compiler doesn’t care.</li>
-</ul>
+        <p>放大电路中的分类和判断…</p>
 <a id="more"></a>
 
-<h2 id="Danger"><a href="#Danger" class="headerlink" title="Danger"></a>Danger</h2><ul>
-<li>Don’t use pointers without initialising them.</li>
+<h1 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h1><h2 id="按增强和减弱净输入信号"><a href="#按增强和减弱净输入信号" class="headerlink" title="按增强和减弱净输入信号"></a>按增强和减弱净输入信号</h2><ul>
+<li>正反馈：增强</li>
+<li>负反馈：减弱</li>
 </ul>
-<h2 id="Data-object"><a href="#Data-object" class="headerlink" title="Data object"></a>Data object</h2><p>Data object means any block of memory allocated for a data item.</p>
-<h1 id="Memory"><a href="#Memory" class="headerlink" title="Memory"></a>Memory</h1><h2 id="Allocating-memory-with-new"><a href="#Allocating-memory-with-new" class="headerlink" title="Allocating memory with new"></a>Allocating memory with <code>new</code></h2><p>Usage: <code>typeName * pointer_name = new typeName;</code></p>
-<h2 id="Freeing-Memory-with-delete"><a href="#Freeing-Memory-with-delete" class="headerlink" title="Freeing Memory with delete"></a>Freeing Memory with <code>delete</code></h2><p>Usage: <code>delete pointer_name</code></p>
+<h2 id="按取样类型"><a href="#按取样类型" class="headerlink" title="按取样类型"></a>按取样类型</h2><ul>
+<li><strong>电压反馈</strong>：从输出端取的是<strong>电压</strong>（反馈信号与输出电压成正比）</li>
+<li><strong>电流反馈</strong>：从输出端取的是<strong>电流</strong>（反馈信号与输出电流成正比）</li>
+</ul>
+<h2 id="按引入输出端的方法"><a href="#按引入输出端的方法" class="headerlink" title="按引入输出端的方法"></a>按引入输出端的方法</h2><p>想一想并联和串联中<strong>直接相加减</strong>的分别是什么物理量</p>
 <ul>
-<li>A <code>new</code> must always be paired with a <code>delete</code>, or there will be a <em>memory leak</em>.</li>
-<li>A <code>delete</code> must only be used on pointers that point to the blocks of memory allocated by <code>new</code>.</li>
+<li><strong>并联反馈</strong>：实际是以<strong>电流</strong>的方式与输入信号比较（加减）</li>
+<li><strong>串联反馈</strong>：实际是以<strong>电压</strong>的方式与输入信号比较（加减）</li>
 </ul>
-<h2 id="Dynamic-arrays"><a href="#Dynamic-arrays" class="headerlink" title="Dynamic arrays"></a>Dynamic arrays</h2><p><em>Dynamic arrays</em> are created during runtime.</p>
-<h3 id="usage"><a href="#usage" class="headerlink" title="usage"></a>usage</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">type_name * pointer_name = <span class="keyword">new</span> type_name [num_element];</span><br><span class="line"><span class="keyword">delete</span> [] pointer_name;</span><br></pre></td></tr></table></figure>
-<h3 id="Notice-that"><a href="#Notice-that" class="headerlink" title="Notice that"></a>Notice that</h3><ul>
-<li>Brackets must be used with both <code>delete</code> and <code>new</code></li>
+<h1 id="判断"><a href="#判断" class="headerlink" title="判断"></a>判断</h1><h2 id="正反馈-负反馈"><a href="#正反馈-负反馈" class="headerlink" title="正反馈 负反馈"></a>正反馈 负反馈</h2><h3 id="定义法"><a href="#定义法" class="headerlink" title="定义法"></a>定义法</h3><p>直接观察是加还是减</p>
+<h3 id="瞬时极性法"><a href="#瞬时极性法" class="headerlink" title="瞬时极性法"></a>瞬时极性法</h3><p>注意共射极的放大电路C极是<strong>反向</strong>放大</p>
+<h2 id="电压反馈-电流反馈"><a href="#电压反馈-电流反馈" class="headerlink" title="电压反馈 电流反馈"></a>电压反馈 电流反馈</h2><h3 id="看反馈网络在输出端的“位置”"><a href="#看反馈网络在输出端的“位置”" class="headerlink" title="看反馈网络在输出端的“位置”"></a>看反馈网络在输出端的“位置”</h3><ul>
+<li>从输出端直接取电压的是电压反馈</li>
+<li>反之是电流反馈</li>
 </ul>
-<h1 id="String-and-pointer"><a href="#String-and-pointer" class="headerlink" title="String and pointer"></a>String and pointer</h1><h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><img title="chptr is a pointer to char" src="/img/coutPtrToChar.png" width="100px">
-
+<h3 id="定义法-1"><a href="#定义法-1" class="headerlink" title="定义法"></a>定义法</h3><p>看反馈信号与输出电压还是电流成正比</p>
+<h3 id="短路判别法"><a href="#短路判别法" class="headerlink" title="短路判别法"></a>短路判别法</h3><p>把<strong>输出端短路</strong>，看是否还有反馈</p>
 <ul>
-<li>With <code>cout</code> and with most C++ expressions, the name of char, a pointer-to-<code>char</code>, and a quoted string constant are <em>all</em> interpreted as the address of the first character of a string.</li>
-<li>So using pointer to print a single <code>char</code> variable will cause unexpected output.</li>
+<li>若有反馈，则是<strong>电流反馈</strong></li>
+<li>若无反馈，则是<strong>电压反馈</strong></li>
 </ul>
+<h2 id="并联反馈-串联反馈"><a href="#并联反馈-串联反馈" class="headerlink" title="并联反馈 串联反馈"></a>并联反馈 串联反馈</h2><p>一般可以用经验方法</p>
+<h3 id="看端口"><a href="#看端口" class="headerlink" title="看端口"></a>看端口</h3><p>看引回的反馈信号是否与输入信号是同一端</p>
+<h4 id="晶体管放大电路"><a href="#晶体管放大电路" class="headerlink" title="晶体管放大电路"></a>晶体管放大电路</h4><ul>
+<li>基极输入、反馈也引到基极是并联</li>
+<li>基极输入、反馈引到发射极是串联</li>
+</ul>
+<h4 id="集成运放"><a href="#集成运放" class="headerlink" title="集成运放"></a>集成运放</h4><p>就看是不是和输入端口一样</p>
 
     </div>
 
@@ -243,7 +242,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Coding-cpp/" rel="tag"># Coding cpp</a>
+              <a href="/tags/Electronics/" rel="tag"># Electronics</a>
+              <a href="/tags/Revision/" rel="tag"># Revision</a>
           </div>
 
         
@@ -252,13 +252,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/09/18/Notes-on-The-Moon-and-Sixpence/" rel="prev" title="Notes on 'The Moon and Sixpence'">
-      <i class="fa fa-chevron-left"></i> Notes on 'The Moon and Sixpence'
+    <a href="/2020/11/27/Analogue-Circuit-Revision-Chinese/" rel="prev" title="Analogue Circuit Revision (Chinese)">
+      <i class="fa fa-chevron-left"></i> Analogue Circuit Revision (Chinese)
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/11/27/Calculus-Notes-Chinese/" rel="next" title="Calculus Notes (Chinese)">
-      Calculus Notes (Chinese) <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -318,7 +315,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Pointer-memory-and-more"><span class="nav-number">1.</span> <span class="nav-text">Pointer, memory and more</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Initialisation"><span class="nav-number">1.1.</span> <span class="nav-text">Initialisation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Danger"><span class="nav-number">1.2.</span> <span class="nav-text">Danger</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-object"><span class="nav-number">1.3.</span> <span class="nav-text">Data object</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Memory"><span class="nav-number">2.</span> <span class="nav-text">Memory</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Allocating-memory-with-new"><span class="nav-number">2.1.</span> <span class="nav-text">Allocating memory with new</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Freeing-Memory-with-delete"><span class="nav-number">2.2.</span> <span class="nav-text">Freeing Memory with delete</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dynamic-arrays"><span class="nav-number">2.3.</span> <span class="nav-text">Dynamic arrays</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#usage"><span class="nav-number">2.3.1.</span> <span class="nav-text">usage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Notice-that"><span class="nav-number">2.3.2.</span> <span class="nav-text">Notice that</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#String-and-pointer"><span class="nav-number">3.</span> <span class="nav-text">String and pointer</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">3.1.</span> <span class="nav-text">Note</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E7%B1%BB"><span class="nav-number">1.</span> <span class="nav-text">分类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%89%E5%A2%9E%E5%BC%BA%E5%92%8C%E5%87%8F%E5%BC%B1%E5%87%80%E8%BE%93%E5%85%A5%E4%BF%A1%E5%8F%B7"><span class="nav-number">1.1.</span> <span class="nav-text">按增强和减弱净输入信号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%89%E5%8F%96%E6%A0%B7%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.</span> <span class="nav-text">按取样类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%89%E5%BC%95%E5%85%A5%E8%BE%93%E5%87%BA%E7%AB%AF%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-number">1.3.</span> <span class="nav-text">按引入输出端的方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%A4%E6%96%AD"><span class="nav-number">2.</span> <span class="nav-text">判断</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%8F%8D%E9%A6%88-%E8%B4%9F%E5%8F%8D%E9%A6%88"><span class="nav-number">2.1.</span> <span class="nav-text">正反馈 负反馈</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E6%B3%95"><span class="nav-number">2.1.1.</span> <span class="nav-text">定义法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9E%AC%E6%97%B6%E6%9E%81%E6%80%A7%E6%B3%95"><span class="nav-number">2.1.2.</span> <span class="nav-text">瞬时极性法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E5%8E%8B%E5%8F%8D%E9%A6%88-%E7%94%B5%E6%B5%81%E5%8F%8D%E9%A6%88"><span class="nav-number">2.2.</span> <span class="nav-text">电压反馈 电流反馈</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9C%8B%E5%8F%8D%E9%A6%88%E7%BD%91%E7%BB%9C%E5%9C%A8%E8%BE%93%E5%87%BA%E7%AB%AF%E7%9A%84%E2%80%9C%E4%BD%8D%E7%BD%AE%E2%80%9D"><span class="nav-number">2.2.1.</span> <span class="nav-text">看反馈网络在输出端的“位置”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E6%B3%95-1"><span class="nav-number">2.2.2.</span> <span class="nav-text">定义法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9F%AD%E8%B7%AF%E5%88%A4%E5%88%AB%E6%B3%95"><span class="nav-number">2.2.3.</span> <span class="nav-text">短路判别法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B9%B6%E8%81%94%E5%8F%8D%E9%A6%88-%E4%B8%B2%E8%81%94%E5%8F%8D%E9%A6%88"><span class="nav-number">2.3.</span> <span class="nav-text">并联反馈 串联反馈</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9C%8B%E7%AB%AF%E5%8F%A3"><span class="nav-number">2.3.1.</span> <span class="nav-text">看端口</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%99%B6%E4%BD%93%E7%AE%A1%E6%94%BE%E5%A4%A7%E7%94%B5%E8%B7%AF"><span class="nav-number">2.3.1.1.</span> <span class="nav-text">晶体管放大电路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%86%E6%88%90%E8%BF%90%E6%94%BE"><span class="nav-number">2.3.1.2.</span> <span class="nav-text">集成运放</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -467,7 +464,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'MikeWalrus.github.io',
       owner       : 'MikeWalrus',
       admin       : ['MikeWalrus'],
-      id          : '69b9e1b5a0aa8286774f3c59832cb72a',
+      id          : 'fb20ef0e142313645126771790614cdf',
         language: '',
       distractionFreeMode: true
     });
